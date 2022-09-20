@@ -34,5 +34,5 @@ function helloWorldJSON(req,res,next){
 app.use('/json', helloWorldJSON);// app.use ('header redirect (for lack of a better word), fucntion to be run)
 app.use('/html', helloWorldHtml);// app.use ('header redirect (for lack of a better word), fucntion to be run)
 app.use(logger);// logger function is run here
-app.use('/',helloWorld);// app.use ('header redirect (for lack of a better word), fucntion to be run)
+app.use('/',helloWorld);// app.use ('header redirect (for lack of a better word), fucntion to be run)(ALways loaded last - root path i.e)
 app.listen(3000,'10.0.0.39');// node.js is listening to the web app on port 3000 at the localhost ip which i physically defined here 
